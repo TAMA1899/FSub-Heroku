@@ -55,11 +55,14 @@ def _check_member(client, message):
       except UserNotParticipant:
         try:
           sent_message = message.reply_text(
-              "Hi {}, You Are **Not Subscribed** yet",
+              "Join Dulu Trus Klik Unmute",
               reply_markup=InlineKeyboardMarkup(
              [
                  [
                      InlineKeyboardButton("💬 Subscribe", url=url)
+                 ],
+                 [
+                     InlineKeyboardButton("🔕 UnMute Me", callback_data="onUnMuteRequest")
                  ]
              ]
          )
