@@ -61,9 +61,6 @@ def _check_member(client, message):
              [
                  [
                      InlineKeyboardButton("💬 Subscribe", url=url)
-                 ],
-                 [
-                     InlineKeyboardButton("🔕 UnMute Me", callback_data="onUnMuteRequest")
                  ]
              ]
          )
