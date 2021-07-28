@@ -55,8 +55,7 @@ def _check_member(client, message):
       except UserNotParticipant:
         try:
           sent_message = message.reply_text(
-              f"Hi {}, You Are **Not Subscribed** yet".format(message.from_user.mention),
-              disable_web_page_preview=True,
+              "Hi {}, You Are **Not Subscribed** yet",
               reply_markup=InlineKeyboardMarkup(
              [
                  [
